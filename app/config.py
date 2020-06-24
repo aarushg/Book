@@ -3,7 +3,7 @@ class BaseConfig(object):
 
     # main config
     SECRET_KEY = 'secret!'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///localhost/database.db'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:////database.db'
     SECURITY_PASSWORD_SALT = 'my_precious_two'
     DEBUG = False
     BCRYPT_LOG_ROUNDS = 13
