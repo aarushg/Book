@@ -271,7 +271,7 @@
                 </div>
                 <div class="modal-body">
         
-                   <form action="" method="POST">
+                   <form action="{{url_for('share.share_')}}" method="POST">
         
       
         
@@ -280,7 +280,7 @@
         
         
                          <label>Email:</label>
-                         <input type="email" class="form-control" name="email" required="1">
+                         <input type="email" class="form-control" name="shareMail" required="1">
         
         
                       </div>
@@ -293,7 +293,6 @@
         
         
                          <button class="btn btn-primary" onClick="" type="submit">Share Book</button>
-                         onclick="move_forward()
 
         
                       </div>
