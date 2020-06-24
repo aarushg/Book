@@ -12,7 +12,7 @@ share = Blueprint("share", __name__, static_folder="static",
 def share_():
     if request.method == 'POST':
 
-    return 'Click.'        shareMail = request.form['shareMail']
+        shareMail = request.form['shareMail']
         user_book_data = Data.query.filter_by(username=current_user.username)
 
 
