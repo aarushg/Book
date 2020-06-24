@@ -5,7 +5,7 @@ from flask_login import UserMixin
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/aarushg/Projects/WebDev/Flask/Book/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 
 class User(UserMixin, db.Model):
