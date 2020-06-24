@@ -50,7 +50,3 @@ def create_app():
         return User.query.get(int(user_id))
 
     return app
-
-'''     app.config['SECRET_KEY'] = 'secret!'
-    app.config['SECURITY_PASSWORD_SALT'] = 'my_precious_two'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/aarushg/Projects/WebDev/Flask/Book/database.db' '''

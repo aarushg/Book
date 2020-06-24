@@ -3,6 +3,8 @@ from flask_login import UserMixin
 from flask_wtf import FlaskForm
 from wtforms.validators import Email, InputRequired, Length
 from wtforms import BooleanField, PasswordField, StringField
+from sqlalchemy.dialects.postgresql import JSON
+
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
