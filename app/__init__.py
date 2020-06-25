@@ -1,5 +1,4 @@
 from flask import Flask
-import os
 #, flash, redirect, render_template, request, url_for
 from flask_bootstrap import Bootstrap
 from flask_login import (LoginManager, current_user, login_required,
@@ -19,7 +18,6 @@ def create_app():
 
     app.config.from_object(BaseConfig)
 
-    os.system('python3 create_db.py')
     db.init_app(app)
     r.init_app(app)
     migrate.init_app(app, db)
